@@ -1,4 +1,5 @@
-
+namespace Lab4
+{
     public class White
     {
         public double Task1(int[] vector)
@@ -12,11 +13,13 @@
                 sum += x * x;
             length = Math.Sqrt(sum);
             // end
+
             return length;
         }
         public int Task2(int[] array, int P, int Q)
         {
             int count = 0;
+
             // code here
             if (array == null || array.Length == 0) return 0;
             int min = Math.Min(P, Q);
@@ -25,10 +28,8 @@
                 if (x > min && x < max)
                     count++;
             // end
-
             return count;
         }
-
         public void Task3(int[] array)
         {
             // code here
@@ -68,7 +69,6 @@
             if (maxIndex != -1)
                 array[maxIndex] = maxIndex;
             // end
-
         }
 
         public int Task5(int[] array, int P)
@@ -209,7 +209,8 @@
                 }
             }
             // end
+
             return restored;
         }
     }
-
+}
